@@ -16,6 +16,7 @@
 				<li><a href="#info">Info</a></li>
 				<li><a href="#jenis">Jenis</a></li>
 				<li><a href="#pengelolaan">Pengelolaan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
 			</ul>
 			<div class="toggle-btn"><i class="fa-solid fa-bars"></i></div>
 		</nav>
@@ -25,6 +26,7 @@
 			<li><a href="#info">Info</a></li>
 			<li><a href="#jenis">Jenis</a></li>
 			<li><a href="#pengelolaan">Pengelolaan</a></li>
+			<li><a href="#kontak">Kontak</a></li>
 		</div>
 	</header>
 
@@ -77,11 +79,11 @@
 			<div class="container">
 				<h1>Pengelolaan Sampah</h1>
 				<div class="menu">
-					<button>Organik</button>
-					<button>Anorganik</button>
-					<button>B3</button>
-				</div> 
-				<div class="content-wrapper" style="display: none;">
+					<span onclick="toggleContent(1)" class="active-bt">Organik</span>
+					<span onclick="toggleContent(2)">Anorganik</span>
+					<span onclick="toggleContent(3)">B3</span>
+				</div>
+				<div class="content-wrapper active-content">
 					<div class="box">
 						<h2><span>1</span> Pupuk Kompos</h2>
 						<p>Pupuk kompos adalah pupuk yang berasal dari sampah-sampah organik, seperti kotoran hewan, sayur-sayuran, sisa rumput, ranting pohon dan lain sebagainya. Pupuk ini bisa digunakan untuk menyuburkan tanah dan tanaman.</p>
@@ -96,7 +98,7 @@
 					</div>
 				</div>
 
-				<div class="content-wrapper" style="display: none;">
+				<div class="content-wrapper">
 					<div class="box">
 						<h2><span>1</span> Kerajinan</h2>
 						<p>Sampah anorganik dapat dimanfaatkan sebagai bahan kerajinan seperti vas bunga dari botol, kap lampu dari botol plastik, tas dari plastik, hiasan dari pecahan keramik, atau wadah pensil dari kaleng susu.</p>
@@ -136,6 +138,12 @@
 			</div>
 		</section>
 	</main>
+
+  <footer id="kontak">
+    <h1>Kontak</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis aperiam doloribus sed nam soluta laborum quisquam iure aliquid blanditiis autem quis commodi aliquam, voluptatem maxime non facere facilis consequuntur expedita.</p>
+  </footer>
+
 	<script src="script.js"></script>
 </body>
 </html>

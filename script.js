@@ -39,3 +39,19 @@ function toggleMute() {
     audioIcon.classList = "fa-solid fa-volume-xmark";
   });
 }
+
+function toggleContent(index) {
+  var buttonClick = document.querySelectorAll('#pengelolaan .menu span');
+  var contentClick = document.querySelectorAll('.content-wrapper');
+
+  buttonClick.forEach(function(wrapper) {
+    wrapper.classList.remove('active-bt');
+  });
+
+  contentClick.forEach(function(wrapper) {
+    wrapper.classList.remove('active-content');
+  });
+
+  buttonClick[index - 1].classList.add('active-bt');
+  contentClick[index - 1].classList.add('active-content');
+}

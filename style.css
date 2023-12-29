@@ -103,8 +103,8 @@ nav ul {
   top: 75px;
   height: 0;
   width: 300px;
-  background: rgba(215, 229, 215, 0.616);
-  backdrop-filter: blur(15px);
+  background: rgba(239, 253, 239, 0.692);
+  backdrop-filter: blur(20px);
   border-radius: 10px;
   overflow: hidden;
   display: none;
@@ -112,7 +112,7 @@ nav ul {
 }
 
 .dropdown-menu.open {
-  height: 200px;
+  height: 250px;
 }
 
 .dropdown-menu li a {
@@ -334,6 +334,7 @@ nav ul {
 /* Main-Section - Pengelolaan */
 #pengelolaan {
   background-color: whitesmoke;
+  min-height: 75vh;
 }
 
 #pengelolaan .container {
@@ -362,24 +363,32 @@ nav ul {
   flex-wrap: wrap;
 }
 
-#pengelolaan button {
+#pengelolaan .menu span {
   margin-bottom: 4.5rem;
   font-size: 1.5rem;
   font-weight: bold;
-  border: none;
-  background-color: transparent;
   cursor: pointer;
   color: rgb(61, 159, 61);
+  padding: 0.5rem;
+}
+
+.active-bt {
+  border-bottom: 3px solid rgb(61, 159, 61);
 }
 
 .content-wrapper {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
   flex-wrap: wrap;
+  padding: 1rem;
   gap: 5rem;
+}
+
+.content-wrapper.active-content {
+  display: flex;
 }
 
 #pengelolaan .box {
@@ -396,7 +405,7 @@ nav ul {
   font-size: 1.5rem;
 }
 
-#pengelolaan span {
+#pengelolaan .box span {
   border: 3px solid green;
   border-radius: 20rem;
   padding-left: 0.6rem;
