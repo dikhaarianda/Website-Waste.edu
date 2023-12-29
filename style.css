@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -162,7 +163,7 @@ nav ul {
 }
 
 #home h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-family: "sans-serif";
   transition: scale 0.3s;
@@ -203,6 +204,7 @@ nav ul {
   position: absolute;
   bottom: 45px;
   right: 45px;
+  cursor: pointer;
   transition: scale 0.3s ease;
 }
 
@@ -221,6 +223,8 @@ nav ul {
   justify-content: space-between;
   align-items: center;
   max-width: 1400px;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
 }
 
 .info-wrapper {
@@ -234,7 +238,7 @@ nav ul {
 .info-wrapper h1 {
   font-family: "sans-serif";
   color: green;
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   margin-bottom: 1rem;
 }
 
@@ -247,7 +251,6 @@ nav ul {
   height: 0 auto;
   width: 300px;
   margin-left: 150px;
-  margin-bottom: 3rem;
 }
 
 #info iframe {
@@ -270,30 +273,32 @@ nav ul {
   align-items: center;
   margin: 0 auto;
   max-width: 1400px;
+  padding-top: 7rem;
+  padding-bottom: 4rem;
 }
 
-.container h1 {
+#jenis h1 {
   color: green;
   font-family: "sans-serif";
-  font-size: 2.5rem;
-  margin-top: 2rem;
-
+  font-size: 2.3rem;
 }
 
-.container p {
+#jenis p {
   font-size: 1rem;
 }
 
-.jenis-wrapper {
+#jenis .jenis-wrapper {
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
 }
 
-.box {
+#jenis .box {
   background-color: rgb(251, 251, 251);
   border-radius: 40px;
-  margin: 4rem;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
   max-width: 300px;
   min-height: 420px;
   padding: 2rem;
@@ -305,25 +310,101 @@ nav ul {
   flex: 1;
 }
 
-.box:nth-child(1) {
+#jenis .box:nth-child(1) {
   border: 2px solid green;
   border-bottom: 10px solid green;
 }
 
-.box:nth-child(2) {
+#jenis .box:nth-child(2) {
   border: 2px solid yellow;
   border-bottom: 10px solid yellow;
 }
 
-.box:nth-child(3) {
+#jenis .box:nth-child(3) {
   border: 2px solid red;
   border-bottom: 10px solid red;
 }
 
-.box img {
+#jenis .box img {
   width: 35%;
   height: 0 auto;
   margin-bottom: 1rem;
+}
+
+/* Main-Section - Pengelolaan */
+#pengelolaan {
+  background-color: whitesmoke;
+}
+
+#pengelolaan .container {
+  padding-top: 7rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+#pengelolaan h1 {
+  font-family: "sans-serif";
+  font-size: 2.5rem;
+  color: green;
+  margin-bottom: 5rem;
+}
+
+#pengelolaan .menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#pengelolaan button {
+  margin-bottom: 4.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(61, 159, 61);
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+#pengelolaan .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  gap: 2rem;
+}
+
+#pengelolaan h2 {
+  color: green;
+  font-size: 1.5rem;
+}
+
+#pengelolaan span {
+  border: 3px solid green;
+  border-radius: 20rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+#pengelolaan p {
+  font-size: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -382,17 +463,17 @@ nav ul {
     width: 500px;
     margin-right: unset;
     border: unset;
-    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   /* Main-Section - Jenis */
-  .box {
+  #jenis .box {
     margin: 1.5rem;
     max-width: 200px;
     min-height: 220px;
   }
 
-  .container p {
+  #jenis p {
     font-size: 0.8rem;
   }
 }
