@@ -27,7 +27,6 @@ nav li {
   transition: scale 0.2s ease;
 }
 
-
 nav li:hover {
   scale: 1.12;
 }
@@ -139,7 +138,6 @@ nav ul {
 }
 
 /* Main-Section - Home */
-
 #home {
   height: 100vh;
   background-color: black;
@@ -215,14 +213,18 @@ nav ul {
 /* Main-Section - Info */
 #info {
   background-color: whitesmoke;
+}
+
+#info .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1400px;
 }
 
 .info-wrapper {
-  margin-top: 3rem;
+  max-width: 1400px;
   display: flex;
   flex-direction: column;
   width: 850px;
@@ -245,6 +247,7 @@ nav ul {
   height: 0 auto;
   width: 300px;
   margin-left: 150px;
+  margin-bottom: 3rem;
 }
 
 #info iframe {
@@ -253,6 +256,74 @@ nav ul {
   border-radius: 20px;
   margin-right: 3rem;
   border: 0.2rem solid black;
+}
+
+/* Main-Section - Jenis */
+#jenis {
+  background-color: rgb(250, 250, 250);
+}
+
+#jenis .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.container h1 {
+  color: green;
+  font-family: "sans-serif";
+  font-size: 2.5rem;
+  margin-top: 2rem;
+
+}
+
+.container p {
+  font-size: 1rem;
+}
+
+.jenis-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.box {
+  background-color: rgb(251, 251, 251);
+  border-radius: 40px;
+  margin: 4rem;
+  max-width: 300px;
+  min-height: 420px;
+  padding: 2rem;
+  box-shadow: 10px 10px 5px rgb(175, 174, 174);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+
+.box:nth-child(1) {
+  border: 2px solid green;
+  border-bottom: 10px solid green;
+}
+
+.box:nth-child(2) {
+  border: 2px solid yellow;
+  border-bottom: 10px solid yellow;
+}
+
+.box:nth-child(3) {
+  border: 2px solid red;
+  border-bottom: 10px solid red;
+}
+
+.box img {
+  width: 35%;
+  height: 0 auto;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 992px) {
@@ -292,7 +363,7 @@ nav ul {
   }
 
   /* Main-Section - Info */
-  #info {
+  #info .container{
     flex-direction: column;
   }
 
@@ -312,6 +383,17 @@ nav ul {
     margin-right: unset;
     border: unset;
     margin-top: 2rem;
+  }
+
+  /* Main-Section - Jenis */
+  .box {
+    margin: 1.5rem;
+    max-width: 200px;
+    min-height: 220px;
+  }
+
+  .container p {
+    font-size: 0.8rem;
   }
 }
 
@@ -350,7 +432,6 @@ nav ul {
   }
 
   /* Main-Section - Info */
-
   #info iframe {
     width: 80%;
   }
@@ -362,5 +443,10 @@ nav ul {
   .info-wrapper p,
   .info-wrapper img  {
     width: 70%;
+  }
+
+  /* Main-Section - Jenis */
+  .jenis-wrapper {
+    flex-direction: column;
   }
 }
