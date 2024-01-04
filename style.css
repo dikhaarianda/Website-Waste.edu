@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Header */
@@ -41,8 +41,8 @@ header {
   top: 0;
   left: 0;
   padding: 0 2rem;
-  z-index: 1;
-  background-color: white;
+  z-index: 1000;
+  background:transparent;
   margin: 0 auto;
   width: 100%;
 }
@@ -55,6 +55,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+
 
 .logo img {
   height: 0 auto;
@@ -141,8 +142,9 @@ nav ul {
 /* Main-Section - Home */
 #home {
   height: 100vh;
+  width: 100%;
   background-color: black;
-  background-image: url('assets/home-page-bg.jpg');
+  background-image: url('assets/bank\ sampah.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -165,17 +167,18 @@ nav ul {
 #home h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family: "sans-serif";
+  font-family: "Poppins";
   transition: scale 0.3s;
 }
 
 #home h1:hover {
   scale: 1.1;
-  color: orangered;
+  color: brown;
 }
 
 #home p {
   font-size: 1.5rem;
+  color :brown;
   margin-bottom: 3rem;
 }
 
@@ -236,7 +239,7 @@ nav ul {
 }
 
 .info-wrapper h1 {
-  font-family: "sans-serif";
+  font-family: "poppins";
   color: green;
   font-size: 2.3rem;
   margin-bottom: 1rem;
@@ -279,7 +282,7 @@ nav ul {
 
 #jenis h1 {
   color: green;
-  font-family: "sans-serif";
+  font-family: "poppins";
   font-size: 2.3rem;
 }
 
@@ -305,6 +308,7 @@ nav ul {
   box-shadow: 10px 10px 5px rgb(175, 174, 174);
   display: flex;
   flex-direction: column;
+  transition: all .45s ease;
   align-items: center;
   text-align: center;
   flex: 1;
@@ -312,17 +316,28 @@ nav ul {
 
 #jenis .box:nth-child(1) {
   border: 2px solid green;
-  border-bottom: 10px solid green;
+  border-bottom: 15px solid green;
+ 
 }
 
 #jenis .box:nth-child(2) {
   border: 2px solid yellow;
-  border-bottom: 10px solid yellow;
+  border-bottom: 15px solid yellow;
 }
 
 #jenis .box:nth-child(3) {
   border: 2px solid red;
-  border-bottom: 10px solid red;
+  border-bottom: 15px solid red;
+}
+
+#jenis .box:nth-child(1):hover{
+  transform: translateY(5px);
+}
+#jenis .box:nth-child(2):hover{
+  transform: translateY(5px);
+
+}#jenis .box:nth-child(3):hover{
+  transform: translateY(5px);
 }
 
 #jenis .box img {
@@ -330,6 +345,7 @@ nav ul {
   height: 0 auto;
   margin-bottom: 1rem;
 }
+
 
 /* Main-Section - Pengelolaan */
 #pengelolaan {
@@ -349,8 +365,9 @@ nav ul {
 }
 
 #pengelolaan h1 {
-  font-family: "sans-serif";
+  font-family: "poppins";
   font-size: 2.5rem;
+  
   color: green;
   margin-bottom: 5rem;
 }
@@ -361,6 +378,13 @@ nav ul {
   align-items: flex-start;
   width: 100%;
   flex-wrap: wrap;
+}
+
+.box{
+  background: white;
+  padding: 35px 45px;
+  border-radius: 10px;
+  transition: all .45s ease;
 }
 
 #pengelolaan .menu span {
@@ -480,7 +504,8 @@ nav ul {
     margin: 1.5rem;
     max-width: 200px;
     min-height: 220px;
-  }
+  }  
+
 
   #jenis p {
     font-size: 0.8rem;
@@ -539,4 +564,68 @@ nav ul {
   .jenis-wrapper {
     flex-direction: column;
   }
+}
+
+
+/* Contact css */
+
+.contact{
+  background: green;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-text h4{
+  color: white;
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-text h2{
+  font-size: 3rem;
+  color: white;
+  line-height: 1;
+}
+
+.contact-text p{
+  color:white;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+
+.contact-text p{
+  display: block;
+  color: white;
+  font-size: 14px;
+  transition: all .45s ease;
+}
+
+.contact-text p:hover{
+  color: white;
+  transform: translateX(5px);
+}
+
+.contact-icons i{
+height: 45px;
+width: 45px;
+background: white;
+color: green;
+font-size: 22px; 
+display: inline-flex;
+align-items: center;
+justify-content: center;
+border-radius: 8px;
+margin-right: 15px;
+transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+  background: green;
+  color: white;   
 }

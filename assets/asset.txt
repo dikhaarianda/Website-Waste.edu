@@ -1,0 +1,59 @@
+--- Image ---
+> Website Logo
+Name: waste-logo
+Format: .png
+Source: 
+- generate with AI
+- link dashboard: https://www.logoai.com/logo-maker
+- link to edit image: https://looka.com/editor/164033967
+
+> Website Image Content
+Name:
+1. home-page-bg
+2. vector-1
+3. box1-img
+4. box2-img
+5. box3-img
+Format: .jpg/.png
+Source:
+- canva asset design
+-link canva: https://www.canva.com/design/DAF4FgL_SWI/6vEWIow85R99nfSMG2QC0A/edit
+
+--- Text ---
+> Main font
+Name:
+1. Open Sans
+2. sans-serif
+Source:
+- Open Sans:
+'https://fonts.googleapis.com/css?family=Open+Sans&display=swap'
+- sans-serif: Generic Font-Family in CSS
+
+> Heading Font
+Name: sans-serif
+
+> Website Icon
+Name: 
+1. fa-bars
+2. fa-xmark
+3. fa-arrow-right
+4. fa-volume-xmark
+5. fa-volume-high
+Source:
+- https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+
+--- Video ---
+> Info-Page
+Name: Sejauh Mana Masalah Sampah di Indonesia? 
+format: .MP4
+Source:
+- youtube
+- https://www.youtube.com/watch?v=i0bb7Et0ots
+
+--- Audio ---
+> Home-Page
+Name: Home-Page-Audio
+format: .MP3
+Source:
+- generate with AI
+- https://www.narakeet.com/languages/text-to-speech-indonesian/

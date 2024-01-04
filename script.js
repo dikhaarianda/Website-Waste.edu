@@ -5,16 +5,16 @@ const menuItems = document.querySelectorAll('.dropdown-menu li')
 const audio = document.getElementById("myAudio")
 const audioIcon = document.querySelector('#home button i')
 
-toggleBtn.onclick = function() {
+toggleBtn.onclick = function () {
   dropDownMenu.classList.toggle('open')
   const isOpen = dropDownMenu.classList.contains('open')
 
   toggleBtnIcon.classList = isOpen
-  ? 'fa-solid fa-xmark'
-  : 'fa-solid fa-bars'
+    ? 'fa-solid fa-xmark'
+    : 'fa-solid fa-bars'
 }
 
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
   const isClickInside = dropDownMenu.contains(event.target) || toggleBtn.contains(event.target);
   const menuItemsArray = Array.from(menuItems);
   const isClickInsideMenu = menuItemsArray.some(item => item.contains(event.target));
@@ -35,7 +35,7 @@ function toggleMute() {
     audioIcon.classList = "fa-solid fa-volume-xmark"
   }
 
-  audio.addEventListener("ended", function() {
+  audio.addEventListener("ended", function () {
     audioIcon.classList = "fa-solid fa-volume-xmark";
   });
 }
@@ -44,14 +44,15 @@ function toggleContent(index) {
   var buttonClick = document.querySelectorAll('#pengelolaan .menu span');
   var contentClick = document.querySelectorAll('.content-wrapper');
 
-  buttonClick.forEach(function(wrapper) {
+  buttonClick.forEach(function (wrapper) {
     wrapper.classList.remove('active-bt');
   });
 
-  contentClick.forEach(function(wrapper) {
+  contentClick.forEach(function (wrapper) {
     wrapper.classList.remove('active-content');
   });
 
   buttonClick[index - 1].classList.add('active-bt');
   contentClick[index - 1].classList.add('active-content');
 }
+
